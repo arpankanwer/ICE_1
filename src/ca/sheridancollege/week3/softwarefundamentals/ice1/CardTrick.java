@@ -40,19 +40,21 @@ public class CardTrick {
         }
 
         // insert code to ask the user for Card value and suit, create their card
-        Scanner input = new Scanner(System.in);
-        System.out.print("Please enter any Card Value(1 - 13): ");
-        int cardValue = input.nextInt();
-        System.out.print("Please enter any Suit: ");
-        String suitValue = input.next();
+        // Scanner input = new Scanner(System.in);
+        // System.out.print("Please enter any Card Value(1 - 13): ");
+        // int cardValue = input.nextInt();
+        // System.out.print("Please enter any Suit: ");
+        // String suitValue = input.next();
 
         // and search magicHand here
         for (Card cards : magicHand) {
 
-            if (cards.getValue() == cardValue && cards.getSuit().equals(suitValue)) {
+            if (cards.getValue() == luckyCard.getValue() && cards.getSuit().equals(luckyCard.getSuit())) {
 
                 // Then report the result here
-                System.out.println("Yes Your " + cardValue + " of " + suitValue + " is in magic hand of random cards");
+                System.out.println("You Won!");
+            }else{
+                System.out.println("You Loss!");
             }
         }
 

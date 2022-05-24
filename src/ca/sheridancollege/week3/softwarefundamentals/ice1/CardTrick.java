@@ -22,7 +22,7 @@ public class CardTrick {
         Card[] magicHand = new Card[7];
         Card luckyCard=new Card();
         luckyCard.setValue(3);
-        luckyCard.setSuit("Diamond");
+        luckyCard.setSuit("Diamonds");
         Random random = new Random();
 
         for (int i = 0; i < magicHand.length; i++) {
@@ -36,7 +36,7 @@ public class CardTrick {
             c.setSuit(Card.SUITS[newRandomNumber]);
 
             magicHand[i] = c;
-
+            
         }
 
         // insert code to ask the user for Card value and suit, create their card
